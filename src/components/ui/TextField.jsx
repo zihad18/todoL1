@@ -1,7 +1,11 @@
-const TextField = () => {
+const TextField = ({inputs,handleInputChange}) => {
 
     return (
-        <input></input>
+        <input 
+            type="text"
+            value={inputs}
+            onChange={handleInputChange}
+        />
     );
 };
 

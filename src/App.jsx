@@ -4,12 +4,19 @@ import './App.css'
 import Button from './components/ui/Button'
 
 function App() {
-  
+  const [inputState, setInputState] = useState("");
+
+  const handleInputChange = (e) => {
+		setInputState(e.target.value);
+	};
 
   return (
     <>
       <h1>Todo app</h1>
-      <TextField/>
+      <TextField 
+          inputs={inputState} 
+          handleInputChange={handleInputChange}
+      />
       <Button text="create"/>
     </>
     
