@@ -1,7 +1,11 @@
-const Button = ({text}) => {
+const Button = ({text,onClick}) => {
+
+    const style = {
+
+    }
 
     return (
-        <button>{text}</button>
+        <button style={style} onClick={onClick}>{text}</button>
     );
 };
 
